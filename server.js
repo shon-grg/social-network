@@ -1,11 +1,14 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const { check, validationResult } = require("express-validator");
 
 const app = express();
 
 // Connect database
-
 connectDB();
+
+// Init middleware
+app.use(express.json({ extended: false }));
 
 app.get("/", (req, res) => {
   res.send("Hello, World!");
