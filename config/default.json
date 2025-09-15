@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb://localhost:27017/my-app"
+  "mongoURI": "mongodb://localhost:27017/my-app",
+  "jwtSecret": "mySecretToken"
 }
